@@ -21,10 +21,20 @@ html
 
       section
         h2 Module Bundler
+        h4 Uses Common.js / AMD / ES6
+        h4 Looks at requires and bundles resources together
+        h4 Resources including images, css, …
+        pre
+          code.language-javascript.
+            var React = require('react');
+            var Grades = require('./modules/Grades.jsx');
+            var myImage = require('../images/some-image.png');
+            require('./mystyles.less');
 
       section
         h2 Works with almost any module system
-        h3 AMD, CJS, UMD, Component, Latest Hipster Module System (LHMS)
+        h3 AMD, CJS, UMD, …
+
 
       section
         h2 Can require in CSS, Images, Fonts etc.
